@@ -1,4 +1,5 @@
 import pr1 from "../../public/pr1.png";
+import pr2 from "../../public/pr2.png";
 
 export const data = [
   {
@@ -8,7 +9,7 @@ export const data = [
     namePr: "E-Commerce Clothing Store",
     path: "https://datn-ebon.vercel.app/",
     descriptions:
-      "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
+      "This is an e-commerce website for selling clothes, compatible with various devices and easy to use.",
     image: pr1,
     tech: [
       {
@@ -35,43 +36,18 @@ export const data = [
     id: 2,
     mouth: 12,
     year: "Present",
-    path: "/",
-    namePr: "About",
-    image: "/pr1.jpg",
+    path: "https://brainwave-tau-mauve.vercel.app/",
+    namePr: "Brainwave Landing Page",
+    image: pr2,
 
     descriptions:
-      "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
+      "This is a UX/UI landing page website for brain wave responsiveness, compatible with various devices.",
     tech: [
       {
-        label: "html",
+        label: "ReactJs",
       },
       {
-        label: "css",
-      },
-      {
-        label: "javascripts",
-      },
-    ],
-  },
-  {
-    id: 3,
-    mouth: 12,
-    year: "Present",
-    path: "/",
-    image: "/pr1.jpg",
-
-    namePr: "About",
-    descriptions:
-      "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.",
-    tech: [
-      {
-        label: "html",
-      },
-      {
-        label: "css",
-      },
-      {
-        label: "javascripts",
+        label: "TailwindCss",
       },
     ],
   },
