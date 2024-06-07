@@ -4,7 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string | null>("about");
-  const sections = ["about", "experience", "project"] as const; // Use 'as const' here
+  const sections = ["about", "project"] as const; // Use 'as const' here
 
   const navRef = useRef<HTMLDivElement | null>(null);
 
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
               duration={500}
               spy={true}
               className={`cursor-pointer capitalize ${
-                activeSection === section ? "font-bold text-blue-600" : ""
+                activeSection === section ? "font-bold" : ""
               }`}
             >
               {section}
