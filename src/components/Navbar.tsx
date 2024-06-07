@@ -34,16 +34,23 @@ const Navbar: React.FC = () => {
 
   return (
     <nav ref={navRef} className="">
-      <ul className="flex flex-col ">
+      <ul className="hidden flex-col lg:gap-5 lg:flex">
         {sections.map((section) => (
-          <li key={section}>
+          <li key={section} className="flex items-center gap-3 group w-min">
+            <p
+              className={`h-[1.5px] w-[60px] transition-all duration-200 ease-in-out bg-[#677488] group-hover:bg-slate-100 group-hover:h-[1.6px] group-hover:w-[80px] ${
+                activeSection === section
+                  ? "bg-[#e2e8f0] h-[1.6px] w-[80px]"
+                  : ""
+              }`}
+            ></p>
             <ScrollLink
               to={section}
               smooth={true}
               duration={500}
               spy={true}
-              className={`cursor-pointer capitalize ${
-                activeSection === section ? "font-bold" : ""
+              className={`cursor-pointer text-[#677488] group-hover:font-bold group-hover:text-slate-100 capitalize transition-all ${
+                activeSection === section ? "font-bold text-slate-100" : ""
               }`}
             >
               {section}

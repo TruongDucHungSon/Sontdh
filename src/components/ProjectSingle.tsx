@@ -10,7 +10,7 @@ export interface IProjectSignProps {
   descriptions: string;
   tech?: { label: string }[];
   path: string;
-  image?: string;
+  image?: any;
 }
 
 const ProjectSingle: React.FC<IProjectSignProps> = ({
@@ -30,7 +30,7 @@ const ProjectSingle: React.FC<IProjectSignProps> = ({
         key={`experience-product-${id}`}
         className="flex flex-col-reverse md:flex-row justify-start items-start gap-3 lg:p-4 transition-all duration-200 rounded-md cursor-pointer group backdrop-filter lg:hover:bg-white/5 hover:backdrop-blur-sm lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]"
       >
-        <div className="flex flex-col w-full md:w-40 mt-2 md:mt-0 lg:w-[30%]">
+        <div className="flex flex-col w-full md:w-40 mt-2 md:mt-0 lg:w-[34%]">
           {year && mouth ? (
             <span className="z-10 flex items-center mt-1 mb-2 text-xs font-semibold tracking-wide uppercase xl:text-sm text-text-secound ">
               {mouth} - {year}
@@ -44,13 +44,13 @@ const ProjectSingle: React.FC<IProjectSignProps> = ({
               alt="Picture of the author"
               width={300}
               height={300}
-              className=" w-[200px] h-24 transition border-2 rounded  border-gray-800 group-hover:border-gray-500 sm:order-1 sm:col-span-2 sm:translate-y-1"
+              className="object-cover w-[200px] lg:w-full  h-32 transition border-2 rounded  border-gray-800 group-hover:border-gray-500 sm:order-1 sm:col-span-2 sm:translate-y-1"
             />
           )}
         </div>
         <div className=" w-full lg:w-[70%]">
           <div className="">
-            <h3 className="inline-flex items-baseline text-base font-medium leading-tight text-text-primary lg:group-hover:text-gr-5a lg:focus-visible:text-gr-5a ">
+            <h3 className="inline-flex items-baseline text-base font-medium leading-tight text-text-primary lg:group-hover:text-[#59ddca] lg:focus-visible:text-gr-5a ">
               {namePr}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const ProjectSingle: React.FC<IProjectSignProps> = ({
                 ></path>
               </svg>
             </h3>
-            <p className="mt-3 text-sm font-medium xl:text-base tracking-wide ">
+            <p className="mt-3 text-sm text-[#677488] font-medium xl:text-sm tracking-wide ">
               {descriptions}
             </p>
           </div>
