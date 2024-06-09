@@ -8,7 +8,7 @@ const Projects: React.FunctionComponent = () => {
       <h2 className="mb-5 text-sm font-bold tracking-widest uppercase lg:hidden text-white lg:sr-only">
         Projects
       </h2>
-      <div className="grid grid-cols-1 gap-12 pb-20">
+      <div className="grid grid-cols-1 gap-12 pb-20 lg:pb-0">
         {data.map((item) => (
           <ProjectSingle
             key={item.id}
