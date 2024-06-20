@@ -1,9 +1,10 @@
 import pr1 from "../../public/pr1.png";
 import pr2 from "../../public/pr2.png";
+import pr3 from "../../public/pr3.png";
 
 export const data = [
   {
-    id: 1,
+    id: 0,
     mouth: 12,
     year: "Present",
     namePr: "E-Commerce Clothing Store",
@@ -33,7 +34,7 @@ export const data = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     mouth: 12,
     year: "Present",
     path: "https://brainwave-tau-mauve.vercel.app/",
@@ -48,6 +49,28 @@ export const data = [
       },
       {
         label: "TailwindCss",
+      },
+    ],
+  },
+  {
+    id: 2,
+    mouth: 12,
+    year: "Present",
+    path: "https://coffee-shop-demo-two.vercel.app/",
+    namePr: "Coffee Shop Landing Page",
+    image: pr3,
+
+    descriptions:
+      "This is a UX/UI landing page website for coffee shop responsiveness, compatible with various devices.",
+    tech: [
+      {
+        label: "Html",
+      },
+      {
+        label: "Sass/Scss",
+      },
+      {
+        label: "Javascript",
       },
     ],
   },
