@@ -8,6 +8,33 @@ export const data = [
     id: 0,
     mouth: 12,
     year: "Present",
+    namePr: "Bytesim",
+    path: "https://bytesim.com",
+    descriptions: "This is the project I coded UX UI and handled API.",
+    image:
+      "https://img-va.myshopline.com/image/store/2002109195/1663745358748/5aa30f96aeea49c9aab43b9616e284c1_1512x.jpeg?w=1481&h=1481",
+    tech: [
+      {
+        label: "NextJs",
+      },
+      {
+        label: "Tailwind Css",
+      },
+      {
+        label: "Medusa Js",
+      },
+      {
+        label: "Supabase",
+      },
+      {
+        label: "Tanstack Query",
+      },
+    ],
+  },
+  {
+    id: 1,
+    mouth: 12,
+    year: "Present",
     namePr: "Booking Bloom Massage",
     path: "https://booking-hotel-lake.vercel.app",
     descriptions:
